@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url(blockchain_bg1.jpg);
+    color: #B5B6B6;
+}
+ nav{
+     width: 100%;
+     height: 100px;
+     background-color:transparent;
+}
+.logo img {
+    color: #010000; 
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px; 
+     height: 60px; 
+    background: linear-gradient(135deg, #000000  5%,#3EB0B4 100%);
+   border-radius: 2px;  
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav ul li{
+    display: flex;
+    line-height: 40px;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+   color: #B5B6B6; 
+   font-size: 12px;
+   font-weight: bold;
+ 
+   
+}
+.active{
+    background-color:transparent;
+}
+.active:hover{
+    color: #010000;
+    
+    font-size: 12px;
+    background-color:  #B5B6B6;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+     
+       
+ .signup-btn {
+        background-color: #0f494d;
+        margin-left: 10px;
+        overflow: hidden;
+        color:white;
+          margin-right: 30px;  
+          padding: 4px 10px;
+          border-radius: 4px;
+          transition: background-color 0.3s ease;
+          overflow: hidden;
+        }
+         
+    
+.signup-btn:hover {
+    background-color:#B5B6B6; 
+    color: #000000;
+}
+.div_class{
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.div_class h1{
+    font-size: 50px;
+    color: #B5B6B6;
+    text-align: center; 
+}
+.para{
+    width: 50vw;
+    text-align: center;
+}
+.scrolling-text-container {
+    background-color: rgb(18, 212, 199);
+    overflow: hidden;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: -1;
+    
+}
+
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 8rem;
+}
+.scrolling-text {
+    display: flex;
+    gap: 50px;
+}
+
+.scrolling-text-item {
+    
+    letter-spacing: -0.05em;
+    font-weight: lighter;
+    font-family: "Orbitron", sans-serif;
+    line-height: 85%;
+    color: rgb(31, 30, 30);
+}
+
+
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+
+.scrolling-text-container:hover .scrolling-text-inner>div {
+   
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+.container{
+    background-color:#16919a;
+     padding-top: 20px;  
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+section {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #3EB0B4;
+    background: linear-gradient(135deg,  #000000   25%, #3EB0B4 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);   
+}
+section h2 :hover{
+    color: #B5B6B6;
+    text-decoration: underline;
+}
+.a_class{
+    text-decoration: none;
+    color: #3EB0B4;
+}
+h2 {
+    color: #3EB0B4;
+}
+footer {
+    background-color: #3EB0B4;
+    padding: 20px;
+    text-align: center;
+}
+footer h2 {
+    color: #010000;
+}
+footer button {
+    background-color: #000000;
+    color: #B5B6B6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+footer button:hover {
+    background-color: #B5B6B6;
+    color: #000000;
+}
+@media (min-width: 350px) and (max-width: 1000px) {
+    .logo {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;  
+        flex-grow: 4; 
+    }
+    .logo img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+    }
+    #menu {
+        list-style-type: none;
+        padding: 0;
+        display: none; 
+        margin-top: 380px;
+        background-color: #0f494d;
+        position: absolute;
+        right: 0px;
+        margin-right: 10px;
+        border-radius: 2px;  
+    }
+    #menu li {
+        margin: 1px 0;
+        margin-left: 10px;
+        margin-right: 10px;   
+    }
+    #menu a {
+        color: white;
+        font-weight: bold;
+        
+        text-decoration: none;
+    }
+    .hamburger {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+        
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-toggle:checked + .hamburger + #menu {
+        display: block;
+    }
+    .signup-btn {
+        display: none; 
+    }
+    .reg-buttons {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    
+    .reg-buttons a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .sign-up {
+        background-color: #0f494d;
+        margin-right: 30px;
+    }
+    .reg-buttons a:hover {
+        background-color: #B5B6B6;
+        color: #000000;
+    }  
+    .div_class h1{
+        font-size: 33px;
+    }
+    .para{
+        width: 90vw;
+
+    }
+ }
+@media (min-width: 1000px){
+   .menu-toggle{
+    display: none;
+   }
+   .sign-up{
+    display: none;
+   }
+   .hamburger{
+    display: none;
+   }
+   .para{
+    width: 90vw;
+   }
+   .logo img{
+    width: 250;
+    height: 80px;
+   }
+    
+}
+   
+   
+    
+
+
+    
+
+
+
+    
